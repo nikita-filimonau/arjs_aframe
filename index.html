@@ -13,7 +13,7 @@
         id="animated-asset"
         src="assets/model/earth_export.gltf"
       ></a-asset-item>
-      <a-marker
+      <a-marker-camera
         preset="custom"
         type="pattern"
         url="assets/marker/marker1.patt"
@@ -24,10 +24,10 @@
           scale="6 6 6"
           animation-mixer="loop: repeat"
           gltf-model="#animated-asset"
+          visible="true"
           gesture-handler
         ></a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
+      </a-marker-camera>
     </a-scene>
   </body>
 </html>
