@@ -6,7 +6,8 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene
       embedded
-      arjs
+      arjs='sourceType: webcam; patternRatio: 0.75 trackingMethod: best maxDetectionRate: 60 detectionMode: mono'
+      renderer='antialias: true; alpha: true; precision: medium;'
       stats
       gesture-detector
     >
@@ -19,8 +20,8 @@
         type="pattern"
         url="assets/marker/marker1.patt"
         emitevents="true"
-        smoothCount=0
-        smoothTolerance=0.0001
+        smoothCount=10
+        smoothTolerance=0.5
       >
         <a-entity
           position="0 2 0"
@@ -37,8 +38,3 @@
 
 <!-- arjs="sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"-->
 <!-- renderer='precision: medium;'-->
-
-
-<!--      arjs='sourceType: webcam; patternRatio: 0.75 trackingMethod: best maxDetectionRate: 60 detectionMode: mono'-->
-<!--      renderer='antialias: true; alpha: true; precision: medium;'-->
-<!--      vr-mode-ui="enabled: false"-->
