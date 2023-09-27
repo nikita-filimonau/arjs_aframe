@@ -14,14 +14,11 @@
         id="animated-asset"
         src="assets/model/test/earth_animation_rotated90.glb"
       ></a-asset-item>
-      <a-marker-camera
+      <a-marker
         preset="custom"
         type="pattern"
         url="assets/marker/marker1.patt"
         emitevents="true"
-        smooth="true"
-        smoothCount=100
-        smoothTolerance=1
       >
         <a-entity
           position="0 2 0"
@@ -31,10 +28,15 @@
           visible="true"
           gesture-handler
         ></a-entity>
-      </a-marker-camera>
+      </a-marker>
+      <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
 
 <!-- arjs="sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"-->
 <!-- renderer='precision: medium;'-->
+
+<!--smooth="true"-->
+<!--smoothCount=100-->
+<!--smoothTolerance=1-->
