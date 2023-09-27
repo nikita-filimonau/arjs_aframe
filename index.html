@@ -14,22 +14,21 @@
         id="animated-asset"
         src="assets/model/test/earth_animation_rotated90.glb"
       ></a-asset-item>
-      <a-marker
+      <a-marker-camera
         preset="custom"
         type="pattern"
         url="assets/marker/marker1.patt"
         emitevents="true"
       >
-        <a-entity
+        <a-entity-camera
           position="0 2 0"
           scale="4 4 4"
           animation-mixer="loop: repeat"
           gltf-model="#animated-asset"
           visible="true"
           gesture-handler
-        ></a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
+        ></a-entity-camera>
+      </a-marker-camera>
     </a-scene>
   </body>
 </html>
