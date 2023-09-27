@@ -6,7 +6,7 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene
       embedded
-      arjs='patternRatio: 0.75;'
+      arjs
       renderer='precision: medium;'
       vr-mode-ui="enabled: false"
       stats
@@ -21,8 +21,6 @@
         type="pattern"
         url="assets/marker/marker1.patt"
         emitevents="true"
-        smoothCount=10
-        smoothTolerance=0.5
       >
         <a-entity
           position="0 2 0"
