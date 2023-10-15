@@ -6,7 +6,7 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene
       embedded
-      arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; patternRatio: 0.75; trackingMethod: best; maxDetectionRate: 60; detectionMode: mono;'
+      arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;'
       renderer='precision: medium; antialias: true; alpha: true;'
       vr-mode-ui="enabled: false"
       gesture-detector
@@ -20,6 +20,11 @@
         type="pattern"
         url="assets/marker/marker1.patt"
         emitevents="true"
+        vidhandler
+        smooth="true"
+        smoothCount='10'
+        smoothTolerance='1'
+        smoothThreshold="4"
       >
         <a-entity
           position="0 2 0"
