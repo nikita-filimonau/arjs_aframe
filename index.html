@@ -6,7 +6,7 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene
       embedded
-      arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;'
+      arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; patternRatio: 0.75; trackingMethod: best; detectionMode: mono;'
       renderer='precision: medium; antialias: true; alpha: true;'
       vr-mode-ui="enabled: false"
       gesture-detector
@@ -38,6 +38,9 @@
     </a-scene>
   </body>
 </html>
+
+<!--      arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; patternRatio: 0.75; trackingMethod: best; maxDetectionRate: 60; detectionMode: mono;'-->
+
 
 <!-- arjs="sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"-->
 <!-- renderer='precision: medium;'-->
